@@ -1,22 +1,118 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      *{
+        font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+      }
+      body{
+        height: 100vh;
+        max-width: 1100px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+      }
+      a{
+        color:#785780;
+      }
+      
+      #header{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+      #header h1{
+        color: white;
+        background-color: #785780;
+        width: 50%;
+        padding: 5px 10px;
+        margin-top:0px;
+      }
+      #image{
+        width:45%
+      }
+      #image img{
+        float:right;
+        width: 100%;
+      }
+      
+      .content p{
+        font-size: 1.3em;
+        line-height: 1.8;
+        padding: 0 20px 80px;
+      }
+      .content span{
+        color:#785780;
+      }
+
+      #footer{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+      }
+      #footer h2{
+        color: white;
+        background-color: #785780;
+        width: 50%;
+        padding: 5px 10px;
+        font-size:2em;
+        text-align: right;
+      }
+      #footer p{
+        width:50%;
+        text-align: left;
+        font-size: 1.4em;
+      }
+
+      @media only screen and (max-width: 1100px) {
+        body{
+          padding:20px;
+          height:auto;
+        }        
+      }
+      @media only screen and (max-width: 768px) {
+        #header{
+          flex-wrap: wrap;
+        }
+        #header h1{
+          width:100%;
+        }
+        #image{
+          width: 100%;
+        }
+        .content p{
+          padding:10px;
+        }
+        #footer{
+          flex-wrap:wrap;
+        }
+        #footer p{
+          width:100%;
+        }
+        #footer h2{
+          width:100%;
+        }
+      }
+
+    </style>
   </head>
   <body>
     <div id="header">
-      smart resource
+      <h1>smart resource</h1>
       <div id="image">
         <img src="image.png" />
       </div>
     </div>
-    <div>
-      Smart resource was born of the idea that a group of freelance consultants might harness the input of their experience and their network. Between us, we cover a broad range of marketing disciplines from corporate communications through strategic planning and change management. Our clients range from multinationals (HSBC, Shell) to media agencies (Havas, Carat) and public sector (FSA, UCAS).  Having honed our skills in the corporate world, we set out to deliver hands-on projects for clients who might be deterred by the high cost/junior level combination of mainstream consultancies. Everyone in our network has worked with another at some point, so clients can be confident that referrals are based on mutual trust and experience.  In effect, the whole is greater than the sum of its parts - but each part works brilliantly on its own. And the smart people who WIN your business WORK on your business. 
-    </div>
-    <div>
-      Please contact Claire Denholm <a href="mailto:cd@smartresource.net">cd@smartresource.net</a>
-      or <a href="https://www.linkedin.com/in/clairedenholm">LinkedIn</a>
+    <div class="content">
+      <p><span>smart resource</span> was born of the idea that a group of freelance consultants might harness the input of their experience and their network. Between us, we cover a broad range of marketing disciplines from corporate communications through strategic planning and change management. Our clients range from multinationals (HSBC, Shell) to media agencies (Havas, Carat) and public sector (FSA, UCAS).  Having honed our skills in the corporate world, we set out to deliver hands-on projects for clients who might be deterred by the high cost/junior level combination of mainstream consultancies. Everyone in our network has worked with another at some point, so clients can be confident that referrals are based on mutual trust and experience.  In effect, the whole is greater than the sum of its parts - but each part works brilliantly on its own. And the smart people who WIN your business WORK on your business. </p>
     </div>
     <div id="footer">
-      smart business
+      <p>
+        Please contact Claire Denholm<br> <a href="mailto:cd@smartresource.net">cd@smartresource.net</a>
+        or <a href="https://www.linkedin.com/in/clairedenholm">LinkedIn</a>
+      </p>
+      <h2>smart business</h2>
     </div>
   </body>
 </html>
